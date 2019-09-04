@@ -1,5 +1,5 @@
         import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-//Bri the cool kid
+//Bri the cool kid!!!!
 /**
  * Write a description of class MyWorld here.
  * 
