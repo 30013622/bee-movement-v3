@@ -45,5 +45,10 @@ public class beee extends Actor
         score = score - plantScore;
         removeTouching(Cactus.class);
     }
+    //check if it wins
+    if(score>= 12){
+        BeeWin winScreen= new BeeWin();
+        Greenfoot.setWorld(winScreen);
+    }
     }
 }
