@@ -50,5 +50,9 @@ public class beee extends Actor
         BeeWin winScreen= new BeeWin();
         Greenfoot.setWorld(winScreen);
     }
+    if(score<=-12){
+        TurtleWin loseScreen= new TurtleWin();
+        Greenfoot.setWorld(loseScreen);
+    }
     }
 }

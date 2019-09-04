@@ -1,4 +1,4 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+BeeWinimport greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
  * Write a description of class Turtle here.
@@ -25,14 +25,26 @@ public class Turtle extends Actor
     }    
     //Check if We Hit a Cactus
     boolean contactFlower = isTouching(flower.class);
-    if(contactFlower){
+   if(contactFlower){
+        flower plant = (flower)getOneIntersectingObject(flower.class);
+        int plantScore = plant.getScore();
+        score = score - plantScore;
         removeTouching(flower.class);
-        score--;
     }
     boolean contactCactus= isTouching(Cactus.class);
     if(contactCactus){
-       removeTouching(Cactus.class);
-       score++;
+        Cactus plant = (Cactus)getOneIntersectingObject(Cactus.class);
+        int plantScore = plant.getScore();
+        score = score + plantScore;
+        removeTouching(Cactus.class);
+    }
+    if(score>= 12){
+        TurtleWin winScreen= new TurtleWin();
+        Greenfoot.setWorld(winScreen);
+    }
+    if(score<=-12){
+        BeeWin loseScreen= new BeeWin();
+        Greenfoot.setWorld(loseScreen);
     }
     }
     }    
