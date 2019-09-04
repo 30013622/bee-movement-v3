@@ -25,6 +25,13 @@ public class MyWorld extends World
         
         beee bee2=new beee();
         addObject(bee2,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber​(400));
+        
+         Turtle turtle1 = new Turtle();
+        addObject(turtle1,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber​(400));
+          
+         Turtle turtle2 = new Turtle();
+        addObject(turtle2,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber​(400));
+        
         if(randomCactus==0){
         Cactus cactus1=new Bobbie();
         addObject(cactus1,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber​(400));
@@ -36,7 +43,7 @@ public class MyWorld extends World
         if(randomCactus==1){
         Cactus cactus3=new Suzie();
         addObject(cactus3,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber​(400));
-    } 
+    }
         
     if(randomFlower==1){
         flower flower1=new Adam();
