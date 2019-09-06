@@ -17,10 +17,10 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1, false); 
-        int randomCactus= Greenfoot.getRandomNumber(2);
-        int randomCactus2= Greenfoot.getRandomNumber(2);
-        int randomFlower= Greenfoot.getRandomNumber(2);
-        int randomFlower2= Greenfoot.getRandomNumber(2);
+        int randomCactus= Greenfoot.getRandomNumber(3);
+        int randomCactus2= Greenfoot.getRandomNumber(3);
+        int randomFlower= Greenfoot.getRandomNumber(3);
+        int randomFlower2= Greenfoot.getRandomNumber(3);
         int amtOfFlowers= 2;
         int amtOfCacti= 2;
         
@@ -59,16 +59,29 @@ public class MyWorld extends World
     
         
     if(randomFlower==1){
-        flower flower1=new Adam();
-        addObject(flower1,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber​(400));
+        flower adamFlower=new Adam();
+        addObject(adamFlower,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber​(400));
     }
-    if(randomFlower==2 || randomFlower2==2){
-        flower flower2=new Daisy();
-        addObject(flower2,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber​(400));
+    if(randomFlower==2){
+        flower daisyFlower=new Daisy();
+        addObject(daisyFlower,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber​(400));
     }
-    if(randomFlower==0  || randomFlower2==0){
-        flower flower3=new Gerturd();
-        addObject(flower3,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber​(400));
+    if(randomFlower==0){
+        flower gerturdFlower=new Gerturd();
+        addObject(gerturdFlower,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber​(400));
+    }
+    
+    if(randomFlower2==1){
+        flower adamFlower2=new Adam();
+        addObject(adamFlower2,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber​(400));
+    }
+    if(randomFlower2==2){
+        flower daisyFlower2=new Daisy();
+        addObject(daisyFlower2,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber​(400));
+    }
+    if(randomFlower2==0){
+        flower gerturdFlower2=new Gerturd();
+        addObject(gerturdFlower2,Greenfoot.getRandomNumber(600),Greenfoot.getRandomNumber​(400));
     }
     }
 }
