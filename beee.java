@@ -10,7 +10,8 @@ public class beee extends Actor
 {
     private int score = 0;    
     
-    
+        int randomCactus= Greenfoot.getRandomNumber(2);
+        int randomFlower= Greenfoot.getRandomNumber(2);
     
     /**
      * Act - do whatever the beee wants to do. This method is called whenever
